@@ -13,10 +13,8 @@
 
     :root {
       --bg:        #F7F3EA;
-      --bg-card:   #EFEAD E;
       --text:      #2C2B28;
       --text-soft: #6B6760;
-      --accent:    #3D3B36;
       --border:    rgba(44,43,40,0.10);
       --radius:    12px;
     }
@@ -30,7 +28,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ── Nav ── */
     nav {
       position: sticky;
       top: 0;
@@ -45,18 +42,8 @@
       align-items: center;
       justify-content: space-between;
     }
-
-    nav a.logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-
-    nav a.logo img {
-      height: 22px;
-      width: auto;
-    }
-
+    nav a.logo { display: flex; align-items: center; text-decoration: none; }
+    nav a.logo img { height: 22px; width: auto; }
     nav a.back {
       font-size: 13px;
       font-weight: 500;
@@ -65,23 +52,19 @@
       letter-spacing: 0.02em;
       transition: color 0.2s;
     }
-
     nav a.back:hover { color: var(--text); }
 
-    /* ── Layout ── */
     .page {
       max-width: 720px;
       margin: 0 auto;
       padding: 64px 24px 120px;
     }
 
-    /* ── Header ── */
     .header {
       margin-bottom: 56px;
       padding-bottom: 40px;
       border-bottom: 1px solid var(--border);
     }
-
     .header .label {
       font-size: 11px;
       font-weight: 500;
@@ -90,7 +73,6 @@
       color: var(--text-soft);
       margin-bottom: 16px;
     }
-
     .header h1 {
       font-size: clamp(28px, 5vw, 42px);
       font-weight: 300;
@@ -99,16 +81,9 @@
       color: var(--text);
       margin-bottom: 20px;
     }
+    .header .meta { font-size: 13px; color: var(--text-soft); }
 
-    .header .meta {
-      font-size: 13px;
-      color: var(--text-soft);
-    }
-
-    /* ── Sections ── */
-    section {
-      margin-bottom: 48px;
-    }
+    section { margin-bottom: 48px; }
 
     section h2 {
       font-size: 18px;
@@ -119,70 +94,26 @@
       padding-bottom: 10px;
       border-bottom: 1px solid var(--border);
     }
-
-    section p {
-      color: var(--text);
-      margin-bottom: 12px;
-    }
-
+    section p { color: var(--text); margin-bottom: 12px; }
     section p:last-child { margin-bottom: 0; }
 
-    section ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
+    section ul { list-style: none; padding: 0; margin: 0; }
     section ul li {
       position: relative;
       padding-left: 18px;
       margin-bottom: 8px;
       color: var(--text);
     }
-
-    section ul li::before {
-      content: '–';
-      position: absolute;
-      left: 0;
-      color: var(--text-soft);
-    }
-
+    section ul li::before { content: '–'; position: absolute; left: 0; color: var(--text-soft); }
     section ul li:last-child { margin-bottom: 0; }
 
-    /* ── Info card ── */
-    .card {
-      background: rgba(44,43,40,0.04);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 24px;
-      margin-top: 16px;
-    }
-
-    .card p {
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-
-    .card p:last-child { margin-bottom: 0; }
-
-    .card strong {
-      font-weight: 500;
-    }
-
-    /* ── Table ── */
     .table-wrap {
       overflow-x: auto;
       margin-top: 16px;
       border-radius: var(--radius);
       border: 1px solid var(--border);
     }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
     thead th {
       background: rgba(44,43,40,0.05);
       font-weight: 500;
@@ -191,16 +122,13 @@
       border-bottom: 1px solid var(--border);
       white-space: nowrap;
     }
-
     tbody td {
       padding: 12px 16px;
       border-bottom: 1px solid var(--border);
       vertical-align: top;
     }
-
     tbody tr:last-child td { border-bottom: none; }
 
-    /* ── Contact ── */
     .contact-box {
       background: rgba(44,43,40,0.04);
       border: 1px solid var(--border);
@@ -209,13 +137,7 @@
       margin-top: 16px;
       text-align: center;
     }
-
-    .contact-box p {
-      font-size: 14px;
-      color: var(--text-soft);
-      margin-bottom: 12px;
-    }
-
+    .contact-box p { font-size: 14px; color: var(--text-soft); margin-bottom: 12px; }
     .contact-box a {
       display: inline-block;
       color: var(--text);
@@ -225,10 +147,8 @@
       padding-bottom: 1px;
       transition: opacity 0.2s;
     }
-
     .contact-box a:hover { opacity: 0.6; }
 
-    /* ── Footer ── */
     footer {
       margin-top: 80px;
       padding-top: 32px;
@@ -239,17 +159,8 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-
-    footer img {
-      height: 18px;
-      width: auto;
-      opacity: 0.5;
-    }
-
-    footer p {
-      font-size: 12px;
-      color: var(--text-soft);
-    }
+    footer img { height: 18px; width: auto; opacity: 0.5; }
+    footer p { font-size: 12px; color: var(--text-soft); }
 
     a { color: inherit; }
 
@@ -278,14 +189,12 @@
     <p class="meta">Last updated: August 12, 2026</p>
   </div>
 
-  <!-- 1 -->
   <section>
     <h2>1. Who We Are</h2>
-    <p>Catharsis Cards is a mindfulness and self-discovery app operated by Catharsis, based in Vienna, Austria. This policy explains what personal data we collect, why we collect it, and how it is handled when you use our app.</p>
+    <p>Catharsis Cards is a mindfulness and self-discovery app operated by <strong>WeMadeThisOÜ</strong>, Harju maakond, Tallinn, Kesklinna linnaosa, Järvevana tee 9, 11314, Estonia. This policy explains what personal data we collect, why we collect it, and how it is handled when you use our app.</p>
     <p>For any privacy-related questions, contact us at <a href="mailto:findyourcatharsis@gmail.com">findyourcatharsis@gmail.com</a>.</p>
   </section>
 
-  <!-- 2 -->
   <section>
     <h2>2. Data We Collect</h2>
     <p>We collect the minimum data necessary to provide the app's features:</p>
@@ -299,7 +208,6 @@
     </ul>
   </section>
 
-  <!-- 3 -->
   <section>
     <h2>3. How We Use Your Data</h2>
     <ul>
@@ -312,10 +220,9 @@
     </ul>
   </section>
 
-  <!-- 4 -->
   <section>
     <h2>4. Legal Basis for Processing (GDPR)</h2>
-    <p>As an Austrian-based operator, we process personal data under the following legal bases as defined by the GDPR:</p>
+    <p>As an EU-based operator registered in Estonia, we process personal data under the following legal bases as defined by the GDPR:</p>
     <ul>
       <li><strong>Contract performance</strong> — processing necessary to provide the services you signed up for (account, subscriptions, Circle mode).</li>
       <li><strong>Legitimate interests</strong> — anonymised analytics to improve the app, where this does not override your privacy rights.</li>
@@ -323,7 +230,6 @@
     </ul>
   </section>
 
-  <!-- 5 -->
   <section>
     <h2>5. Third-Party Services</h2>
     <p>We use the following third-party services to operate the app. Each acts as a data processor on our behalf:</p>
@@ -368,7 +274,6 @@
     <p style="margin-top:16px;">We do not sell your personal data to any third parties.</p>
   </section>
 
-  <!-- 6 -->
   <section>
     <h2>6. Data Retention</h2>
     <ul>
@@ -379,7 +284,6 @@
     </ul>
   </section>
 
-  <!-- 7 -->
   <section>
     <h2>7. Your Rights</h2>
     <p>Under the GDPR and applicable data protection law, you have the right to:</p>
@@ -392,10 +296,9 @@
       <li><strong>Object</strong> — object to processing based on legitimate interests.</li>
       <li><strong>Withdraw consent</strong> — for advertising identifiers, opt out via your device settings at any time.</li>
     </ul>
-    <p>To exercise any of these rights, contact us at <a href="mailto:findyourcatharsis@gmail.com">findyourcatharsis@gmail.com</a>. We will respond within 30 days. You also have the right to lodge a complaint with the Austrian Data Protection Authority (<a href="https://www.dsb.gv.at" target="_blank" rel="noopener">dsb.gv.at</a>).</p>
+    <p>To exercise any of these rights, contact us at <a href="mailto:findyourcatharsis@gmail.com">findyourcatharsis@gmail.com</a>. We will respond within 30 days. You also have the right to lodge a complaint with the Estonian Data Protection Inspectorate (<a href="https://www.aki.ee" target="_blank" rel="noopener">aki.ee</a>).</p>
   </section>
 
-  <!-- 8 -->
   <section>
     <h2>8. Account Deletion</h2>
     <p>You can delete your account directly from within the app under Account Settings. Deletion removes your profile, reflections, and associated data from our systems within 30 days.</p>
@@ -403,36 +306,31 @@
     <p style="margin-top:12px;"><a href="https://catharsisdev.github.io/CatharsisCardsAccountDeletionPage/" style="font-weight:500; text-decoration:underline;">View step-by-step account deletion instructions →</a></p>
   </section>
 
-  <!-- 9 -->
   <section>
     <h2>9. Children's Privacy</h2>
     <p>The app is available to users aged 13 and over. We do not knowingly collect personal data from children under 13. If you believe a child under 13 has provided us with personal data, please contact us and we will delete it promptly.</p>
   </section>
 
-  <!-- 10 -->
   <section>
     <h2>10. International Data Transfers</h2>
     <p>Your data may be processed in countries outside the European Economic Area, including the United States, by our third-party service providers (Google, Apple, OpenAI). Where required, we rely on appropriate safeguards such as Standard Contractual Clauses to ensure your data is protected in accordance with GDPR.</p>
   </section>
 
-  <!-- 11 -->
   <section>
     <h2>11. Security</h2>
     <p>We use industry-standard encryption in transit (TLS) and at rest for all data stored with Firebase. Whilst we take reasonable steps to protect your information, no method of transmission or storage is completely secure. If you believe your account has been compromised, contact us immediately.</p>
   </section>
 
-  <!-- 12 -->
   <section>
     <h2>12. Changes to This Policy</h2>
     <p>We may update this policy from time to time. When we make material changes, we will update the "Last updated" date at the top of this page. Continued use of the app after changes are posted constitutes acceptance of the revised policy.</p>
   </section>
 
-  <!-- 13 -->
   <section>
     <h2>13. Contact</h2>
     <p>For any privacy questions, data requests, or concerns:</p>
     <div class="contact-box">
-      <p>Catharsis Cards — Privacy</p>
+      <p>WeMadeThisOÜ — Privacy</p>
       <a href="mailto:findyourcatharsis@gmail.com">findyourcatharsis@gmail.com</a>
     </div>
   </section>
